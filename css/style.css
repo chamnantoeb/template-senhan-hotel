@@ -1,0 +1,434 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.top-menu
+{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    border-bottom: 1px solid white;
+    background: rgba(163,142 , 142, 0.7)
+}
+.text-right{
+    text-align: right;
+}
+
+.menu a{
+    color:#fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 13px;
+    font-family: arial;
+    font-weight: bold;
+    margin-top: 13px;
+    color: rgb(255, 255, 255);
+}
+.menu a:hover{
+    color: rgb(0, 0, 0);
+}
+.text-center{
+    text-align: center;
+}
+.welcome{
+    background: #ccc;
+    margin: 0;
+    margin-top: -16px;
+}
+.welcome h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: normal;
+    font-family: arial;
+    padding: 15px 2px;
+    margin:15px;
+}
+a.btn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: red;
+    background: yellow;
+    padding: 10px 8px;
+}
+a.booking{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: rgb(1, 1, 197);
+    margin: 0 19px;
+    padding: 8px 8px;
+    font-weight: bold;
+}
+p.lst-paragraph{
+    margin: 0;
+    padding: 0;
+    height: 150px;
+}
+a.btn:hover{
+    color: green;
+    background: #acc;
+}
+.lang{
+    position: relative;
+    margin-right: 2px;
+   
+}
+.en{
+    margin-left: 27px;
+}
+.lang img{
+    width: 32px;
+    position: absolute;
+    top: -7px;
+}
+/* -----Slide Show------ */
+.read-more{
+    padding:0;
+    padding-left: 200px;
+    position: absolute;
+    bottom: 80px;
+    width: 50%;
+} 
+.read-more a{
+    color: #fcfcfc;
+    font-size: 14px;
+    font-family: arial;
+    background: rgba(32, 193, 221, 0.39);
+    padding: 8px 23px;
+    border-radius: 15px 15px;
+    border: 0.5px solid rgba(5, 224, 253, 0.719);
+    text-decoration: none;
+}
+.number-dot{
+    
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+.dot{
+    height: 3px;
+    width: 35px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius:2px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+.slideshow{
+    box-sizing: border-box;   
+    position: relative;
+    margin:0 auto;
+    
+}
+.slider{
+    display: none;
+}
+.slider>img{
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+.prev,.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: transparent;
+    color: black;
+  }
+.menu-tab
+    {
+        background: #ecebeb;
+        margin-bottom: 2px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+.nav-menu-center
+    {
+        list-style: none;
+        text-align: center;
+        display: block;
+        margin-bottom: 0;
+       
+    }
+.nav-menu-center li
+    {
+        display: inline-block;
+    }
+.nav-menu-center li a
+    {
+        font-weight: 600;
+        color: #000;
+        display: block;
+        padding: 8px 9px;
+        text-decoration: none;
+    }
+.active
+    {
+        background-color:#fff;  
+    }
+
+
+/* ---------------gallery pic----------- */
+.row-pic{
+    /* border:1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    /* padding: 0 4px; */
+    
+}
+.col-pic{
+    flex: 24%;
+    max-width: 25%;
+    padding: 0;
+    /* padding: 0 4px; */
+    /* border: 1px solid blue; */
+    vertical-align: center;
+}
+.col-pic img{
+    margin: 0;
+    vertical-align: middle;
+    width: 100%;
+}
+@media screen and (max-width: 800px){
+    .col-pic{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 600px){
+    .col-pic{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+/* ------------------Promotion------------------ */
+.pro-header{
+    font-family:Arial;
+    font-size: 25px;
+    text-align: center;
+    color: red;
+    margin: -5px;
+}
+.pro-container{
+      display: flex;
+      padding-left: 100px;
+      padding-right:100px;
+      /* border:1px solid red; */
+}
+.pro-wrapper{       
+  flex: 100%;
+  margin: 20px;
+  height: 470px;
+  /* border: 1px solid blue; */
+  background:#ccc;
+}
+.offer-container{
+    display: flex;
+    margin:0;
+    padding: 0;
+}
+.offer-wrapper{
+    flex: 100%;
+    margin:0;
+    height: 500px;
+}
+.offer-wrapper>a>img{
+    height: 100%;
+}
+.paragraph{
+    margin: 0;
+    padding: -9px 0px 9px 9px;
+}
+.title{
+    text-align: center;
+    font-family: arial;
+    font-size: 24px;
+    color: red;
+}
+.paragraph>p{
+    font-size: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    font-family: arial;
+    color:#000;
+}
+.price{
+    margin: 9px;
+    position: absolute;
+    padding:9px 15px;
+    background-color: rgb(241, 104, 54);
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ecebeb;
+    font-weight: bold;
+}
+.small{
+    margin: 9px;
+    position: absolute;
+    padding:6px 10px;
+    background-color: rgb(241, 104, 54);
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ecebeb;
+    font-weight: bold;
+}
+.lst-title{
+    color: rgb(9, 9, 160);
+}
+.book-now{
+    margin-left: 400px;
+    height: 80px;
+    width:80px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgb(241, 222, 54);
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ecebeb;
+    font-weight: bold;
+    text-align: center;
+}
+.book-now a{
+    padding-top: 30px;
+}
+h1.our-room{
+    text-transform: uppercase;
+    font-size: 50px;
+    color: rgb(133, 133, 133);
+
+}
+.offer-details-text>h1{
+    position: absolute;
+    margin-top:-180px;
+    margin-left: 80px;  
+}
+.offer-details-text>p{
+    position: absolute;
+    margin-top:-140px;
+    margin-left: 80px;  
+    font-size: 24px;
+}
+.offer-detail>a{
+    position: absolute;
+    margin-top: -95px;
+    margin-left: 80px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 9px 21px;
+    background:rgba(46, 130, 255, 0.548);
+    border-radius:16px;
+}
+.offer-detail>a:hover{
+    background: #acc;
+    color: #000;
+}
+h1.hotel-location{
+    font-family:arial;
+    font-size: 40px;
+    font-weight: normal;
+    color: rgb(104, 104, 104);
+    text-transform: uppercase;
+}
+.map-container{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+
+}
+.map-wrapper{
+    flex: 100%;
+    margin:0;
+    height: 500px;
+}
+/* .gl-map{
+    width: 100%;
+    height:500px;
+}*/
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+.footer-wrapper{
+    flex: 25%;
+    padding: 0;
+    max-width: 100%;
+    height: 100%;
+    vertical-align: center;
+    /* border: 1px solid green; */
+}
+.footer{
+    /* height: 100%; */
+    margin-top: 12px;
+}
+.footer address,.footer span{
+    color: rgb(139, 139, 139);
+}
+.menu-head p{
+    font-weight: bold;
+    margin-top: 30px;
+    padding-left: 40px;
+    font-family: arial;
+    color: rgb(32, 32, 32);
+}
+.v-menu ul{
+    list-style:none;
+    margin:0;
+}
+.v-menu ul li{
+    font-family: arial;
+}
+.v-menu ul li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(141, 141, 141);
+}
+.v-menu ul li a:hover{
+    color: rgb(78, 78, 78);
+}
+.follow-us{
+    font-weight: bold;
+    margin-top: 30px;
+    padding-left: 40px;
+    font-family: arial;
+    color: rgb(32, 32, 32);
+}
+.follow-link{
+    padding-left: 40px;
+}
+.follow-link a{
+    padding-right: 5px;
+}
